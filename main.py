@@ -9,4 +9,4 @@ def compare_version(a, b):
     return 0
 
 
-print(compare_version('2.10', '1.1.3'))
+print(compare_version('1.10', '1.1'))
