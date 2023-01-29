@@ -1,16 +1,12 @@
-# This is a sample Python script.
+def compare_version(a, b):
+    a = list(map(int, a.split('.')))
+    b = list(map(int, b.split('.')))
+    print(a, b)
+    if a < b:
+        return -1
+    elif a > b:
+        return 1
+    return 0
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(compare_version('2.10', '1.1.3'))
